@@ -1,8 +1,35 @@
-# Bitbucket Pipelines PHP 8.0 image
+# PHP 8.0 Laravel Development Environment
+
+This Docker image is a fork of [Pierre-Yves Guerder's](https://github.com/pierreyves-guerder) PHP 8.0 development environment.
+
+## Original Author
+- Pierre-Yves Guerder <pierreyves.guerder@gmail.com>
+
+## What's Included
+- Ubuntu 22.04
+- PHP 8.0 with common extensions
+- MySQL Server
+- Apache2
+- Node.js & Yarn
+- Composer
+- Various development tools
+
+## Changes from Original
+- Updated to Ubuntu 22.04
+- Modernized the Dockerfile to use new Docker best practices
+
+## Usage
+```bash
+docker build -t your-name/laravel-php80 .
+docker run -d your-name/laravel-php80
+```
+
+## License
+This project maintains the same license as the original work by Pierre-Yves Guerder.
 
 [![](https://images.microbadger.com/badges/version/pyguerder/bitbucket-pipelines-php80.svg)](https://microbadger.com/images/pyguerder/bitbucket-pipelines-php80 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/pyguerder/bitbucket-pipelines-php80.svg)](https://microbadger.com/images/pyguerder/bitbucket-pipelines-php80 "Get your own image badge on microbadger.com")
 
-## Based on Ubuntu 20.04
+## Based on Ubuntu 22.04
 
 ### Packages installed
 
